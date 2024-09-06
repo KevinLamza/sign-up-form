@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
+/* :root {
+    font-size: 4px;
+} */
+
 body {
     margin: 0;
     padding: 0;
@@ -18,13 +22,14 @@ body {
     background-image: url("assets/background.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .image-container {
     width: 100%;
     height: 13%;
     background-color: rgba(0,0,0,0.4);
-    margin-top: 45%;
+    margin-top: 31vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,11 +39,40 @@ body {
     color: white;
 }
 
-.image-container > img {
-    /* display: block;
-    margin: auto; */
+.image-container > div {
+    flex-shrink: 1;
+}
+
+.image-credits {
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.image-credits > a {
+    color: inherit;
 }
 
 .right-column {
     flex: 0 1 60%;
+}
+
+.right-column p:nth-child(-n + 3) {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 3vw;
+    padding-right: 15vw;
+    margin-top: 17vh;
+}
+
+.right-column p:nth-child(2) {
+    margin-top: 6vh;
+}
+
+.right-column p:nth-child(3) {
+    margin-top: 6vh;
 }
