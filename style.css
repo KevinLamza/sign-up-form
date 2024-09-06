@@ -63,7 +63,7 @@ body {
     flex: 0 1 60%;
 }
 
-.right-column {
+.right-column > p {
     padding-left: 3vw;
     padding-right: 15vw;
     margin-top: 17vh;
@@ -89,9 +89,9 @@ body {
     background-color: white;
 }
 
-/* .container-bg > p {
+.container-bg > p {
     padding-left: 3vw;
-} */
+}
 
 .form-container {
     display: flex;
@@ -109,4 +109,27 @@ form {
 
 form input {
     margin-bottom: 4vh;
+}
+
+form > button {
+    margin-top: 2vh;
+    margin-left: 3vw;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif, system-ui;
+    background-color: hwb(204 0% 0%);
+    color: white;
+    border-radius: 10px;
+}
+
+.right-column p:last-child {
+    margin-top: 2.5vh;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif, system-ui;
+    font-weight: 500;
+}
+
+.right-column a {
+    color: hwb(204 0% 0%);
 }
