@@ -114,6 +114,18 @@ form input {
     box-sizing: border-box;
     }
 
+input:required {
+    border: 1px solid red;
+}
+
+input:required:valid {
+    border: 1px solid green;
+}
+
+input:focus {
+    border: 3px solid hwb(204 0% 0%);
+}
+
 form > button {
     margin-top: 3vh;
     margin-left: 3vw;
