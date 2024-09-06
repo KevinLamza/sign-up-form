@@ -109,10 +109,13 @@ form {
 
 form input {
     margin-bottom: 4vh;
-}
+    width: 15vw;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    }
 
 form > button {
-    margin-top: 2vh;
+    margin-top: 3vh;
     margin-left: 3vw;
     padding: 10px 40px;
     font-size: 16px;
