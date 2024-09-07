@@ -122,8 +122,13 @@ input:required:valid {
     border: 1px solid green;
 }
 
+input:required::before {
+    content: 'test';
+}
+
 input:focus {
     border: 3px solid hwb(204 0% 0%);
+    box-shadow: 0 5px 5px lightgrey;
 }
 
 form > button {
